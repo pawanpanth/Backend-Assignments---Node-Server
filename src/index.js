@@ -6,7 +6,7 @@ const httpServer = http.createServer(handleServer).listen(8081);
 function handleServer(req, res) {
     if(req.url=='/welcome'){
         res.writeHead(200,{'content-Type':'text/plain'});
-        res.write('welcome to Dominos!');
+        res.write('Welcome to Dominos!');
         res.end();
     }
 
@@ -20,7 +20,7 @@ function handleServer(req, res) {
     }
     else{
         res.writeHead(404,{'content-Type':'text/plain'})
-        res.write('Page was not found');
+        // res.write('Page was not found');
         res.end();
     }
 }
