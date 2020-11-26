@@ -6,7 +6,7 @@ const httpServer = http.createServer(handleServer).listen(8081);
 function handleServer(req, res) {
     if(req.url=='/welcome'){
         res.writeHead(200,{'content-Type':'text/plain'});
-        res.write('welcome to Dominos');
+        res.write('welcome to Dominos!');
         res.end();
     }
 
