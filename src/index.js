@@ -21,7 +21,7 @@ function handleServer(req, res) {
         res.end();
     }
     else{
-        res.writeHead(404,{'content-Type':'text/plain'})
+        res.writeHead(404)
         // res.write('Page was not found');
         res.end();
     }
